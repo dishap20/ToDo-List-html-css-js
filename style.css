@@ -1,0 +1,137 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  /* Glassmorphism container */
+  .container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px 40px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  .input-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  #taskInput {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  #addBtn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #addBtn:hover {
+    background: #43a047;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    border-radius: 10px;
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease;
+  }
+  
+  select {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  option {
+    color: #000;
+  }
+  
+  button.delete {
+    background: #ff4b5c;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button.delete:hover {
+    background: #e63b4c;
+  }
+  
+  /* Status colors */
+  .status-ToDo {
+    border-left: 4px solid #ffeb3b;
+  }
+  
+  .status-InProgress {
+    border-left: 4px solid #03a9f4;
+  }
+  
+  .status-InReview {
+    border-left: 4px solid #9c27b0;
+  }
+  
+  .status-Completed {
+    border-left: 4px solid #4caf50;
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+
+  
